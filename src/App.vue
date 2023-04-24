@@ -44,7 +44,7 @@
           </div>
 
         </div>
-        <div class="row border" v-else>
+        <div class="row border" v-else @click='displayDetailedProduct(item)'>
 
           <div class="col-sm-10 p-0 pt-3">
             <ul class="p-2">
@@ -65,7 +65,7 @@
       </div>
     </div>
     <div v-else>
-      <div class="row">
+      <div class="row" >
         <div class="col-sm-2 p-0">
           <img :src="product.imageURL" class="p-3 w-100" />
         </div>
